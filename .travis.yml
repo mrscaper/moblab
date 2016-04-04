@@ -25,4 +25,5 @@ notifications:
     recipients: 
     - myemail@address.com 
     onsuccess: always 
-    onfailure: always
+    onfailure: always 
+script: ./gradlew :app:build :app:connectedDebugAndroidTest
