@@ -14,11 +14,11 @@ android:
     - addon-google_apis-google-19 
     - sys-img-armeabi-v7a-android-21 
 
-script: ./gradlew :app:build :app:connectedDebugAndroidTest
+script: ./gradlew :app:build
 env:
   global:
     - MALLOC_ARENA_MAX=2
-    - ADB_INSTALL_TIMEOUT=50
+    - ADB_INSTALL_TIMEOUT=8
 sudo: required  
 #komment
 before_script:
